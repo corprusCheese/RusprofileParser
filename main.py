@@ -41,7 +41,7 @@ def get_html(url, my_proxy=None):
 
     while(connection_is_ok is False):
         try:
-            time.sleep(random.randrange(5,10))
+            time.sleep(random.uniform(5,10))
             curtain_proxy = {
                 'https': proxy_str
             }
